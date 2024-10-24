@@ -3,6 +3,41 @@
     padding: 0;
     margin: 0;
 }
+.daohang{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 1, 11);
+    z-index: 60;
+}
+.no1{
+    background-color: rgb(94, 129, 159);
+}
+div .xians{
+    display: block;
+}
+
+.item {
+    display: none;
+}
+.daohang li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    height: 50px;
+    width: 215px;
+    line-height: 50px;
+    border: 0px solid black;
+    font-size: 25px;
+    color: rgb(40, 51, 109);
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.daohang .quxiao{
+    border-right:0px solid ;
+    border-bottom: 1px solid #666;
+}
 .top{
     position: relative;
     height: 1200px;
@@ -44,6 +79,58 @@ h2{
     top: 350px;
     animation: move1 5s ease-in-out forwards;
 }
+.item p{
+    font-size: 90px;
+    position: absolute;
+    font-style: italic;
+    font-size: 90px;
+    color: rgb(40, 51, 109);
+    position: absolute;
+    top: 350px;
+    animation: jiaoc 5s ease-in-out forwards;
+}
+.item h5{
+    position: absolute;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(40, 51, 109);
+    top: 300px;
+    animation: jiaoc 5s ease-in-out forwards;
+}
+.item h4{
+    position: absolute;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(40, 51, 109);
+    top: 300px;
+    animation: off 5s ease-in-out forwards;;
+}
+.item video{
+    position: absolute;
+    top: -220px;
+    width: 100%;
+    left: 0;
+    opacity: 0.6;
+}
+@keyframes off{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+        opacity: 0;
+        }
+    }
+
+@keyframes jiaoc{
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
 @keyframes move1{
     0% {
             transform: translateX(0px);
@@ -62,14 +149,14 @@ h2{
 }
 .windows{
     position: fixed;
-    width: 100px;
-    height: 50px;
-    top: 50px;
-    left: 50px;
+    width: 302px;
+    height: 25px;
+    top: 300px;
+    left: 600px;
     border-radius: 50%;
     background-color:chartreuse;
     z-index: 10;
-    opacity: 0.1;
+    opacity: 0.5;
 }
 .buttom{
     position: absolute;
@@ -85,6 +172,9 @@ label{
     text-align: center;
     border: 1px solid rgb(119, 119, 165);
     color: rgb(119, 119, 165);
+}
+label:hover{
+    background-color: aqua;
 }
 #jianjie{
     display: none;
@@ -176,7 +266,7 @@ label{
 .box2{
     position: relative;
     background-color:black;
-    width: 245px;
+    width: 243px;
     height: 308px;
     bottom: 609px;
     right: -1268px;
@@ -256,6 +346,7 @@ label{
     position: relative;
     bottom: 605px;
     text-align: center;
+    opacity: 1;
 }
 .copyright {
     position: relative;
@@ -270,4 +361,29 @@ label{
     color: red;
     position: relative;
     bottom: 0;
+}
+.honqi1{
+    position: absolute;
+    bottom: -2369px;
+    left: 0px;
+    width: 276px;
+    height: 690px;
+    opacity: 0.8;
+}
+.honqi1 img{
+    width: 100%;
+    height: 100%;
+}
+.honqi2{
+    position: absolute;
+    background-color: red;
+    bottom: -2369px;
+    right: 0px;
+    width: 276px;
+    height: 690px;
+    opacity: 0.8;
+}
+.honqi2 img{
+    width: 100%;
+    height: 100%;
 }
