@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>追逐梦想</title>
     <link rel="stylesheet" href="./oycc.css">
+    <style>
+     @keyframes move4{
+        0%{
+            transform: translateX(0px);
+
+        }
+        50%{
+            color: red;
+            opacity: 0.3;
+        }
+        100%{
+            transform: translateX(500px);
+            color: chartreuse;
+            opacity: 0.3;
+        }
+     }
+
+
+    </style>
 </head>
 <body>
     <div class="daohang">
         <ul>
             <li class="no1">首页</li>
             <li>浏览器设置</li>
-            <li>黑洞</li>
-            <li>宇宙</li>
+            <li>免费服务器</li>
+            <li>视觉中国的图片</li>
             <li>写轮眼</li>
             <li>背景音乐</li>
             <li class="quxiao">关闭字幕</li>
@@ -21,7 +40,7 @@
     
     <div class="wn"></div>
     <div class="top">
-        <div class="a1"><img src="./images/back.png" alt=""></div>
+        <div class="a1"><img src="./images/back.png" alt="text - decoration: none"></div>
     <div class="xians item"><h1 >珠峰的璀璨</h1>
     <h2 >地球的脊梁</h2></div>
     <div class="item">
@@ -32,14 +51,24 @@
             </h5>
         </p>
     </div>
-    <div class="item"></div>
-    <div class="item"></div>
+    <div class="item">
+
+        <h1>
+            <a href="https://github.com/" target="_blank" style="text-decoration: none;">点击打开服务器</a>
+            <h2>校园网才能进</h2>
+        </h1>
+    </div>
+    <div class="item">
+          <h1 style="animation: move4 3s ease-in-out forwards;">视觉中国，顶尖素材网站</h1>
+    
+
+    </div>
     <div class="item"><video src="./video/eye.mp4" autoplay muted loop></video></div>
     <div class="item windows">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;背景音乐 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记得关闭窗口<audio src="./audio/Episode 33 - Episode 33 (slow+混响）.mp3"
             controls autoplay> </audio></div>
     <div class="item">
-        <h4>导航栏的字包括音乐框都可以在此关闭,5秒后自动关闭</h4>
+        <h4 style="color: brown;">导航栏的字包括音乐框都可以在此关闭,5秒后自动关闭</h4>
     </div>
     <div class="buttom">
         <label for="jianjie">第二弹</label>

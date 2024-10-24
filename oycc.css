@@ -103,7 +103,7 @@ h2{
     font-size: 30px;
     color: rgb(40, 51, 109);
     top: 300px;
-    animation: off 5s ease-in-out forwards;;
+    animation: off 5s ease-in-out forwards;
 }
 .item video{
     position: absolute;
