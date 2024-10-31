@@ -16,6 +16,43 @@ for (var i = 0; i < lis.length; i++) {
         items[index].style.display = 'block';
     }
 }
+const image = document.querySelector('.zoom-image');
+window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const containerTop = document.querySelector('.zoom-container').getBoundingClientRect().top;
+    const zoomFactor = 1 + (scrollTop / 100);
+    if (scrollTop > containerTop) {
+        image.style.transform = `scale(${zoomFactor})`;
+    } else {
+        image.style.transform = `scale(1)`;
+    }
+});
+$(document).ready(function () {
+    var scrollPosition = $(window).scrollTop();
+    var threshold = 500; 
+
+    $(window).scroll(function () {
+        scrollPosition = $(this).scrollTop(); 
+
+        if (scrollPosition > threshold) {
+           
+            $('#element-to-change').removeClass('back5 ').addClass('back6');
+        } else {
+            
+            $('#element-to-change').removeClass('back6').addClass('back5');
+        }
+    });
+});
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var scroll = $(this).scrollTop();
+        var triggerHeight = 500; 
+        var targetHeight = 1480; 
+        if (scroll >= triggerHeight && scroll < targetHeight) {
+            $('html, body').scrollTop(targetHeight);
+        }
+    });
+});
 $(".no1").hover(function(){
     $(this).children("ul").stop().slideToggle(200);
 })
@@ -38,3 +75,10 @@ $(".no6").hover(function () {
 $(".no7").hover(function () {
     $(this).children("ul").stop().slideToggle(200);
 })
+$(".cebian").click(function () {
+    $("ul").toggleClass("active");
+});
+$(".cebian li").mouseover(function(){
+    $(this).toggleClass("cebian2");
+});
+
